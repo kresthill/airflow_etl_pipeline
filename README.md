@@ -25,6 +25,12 @@ The workflow follows the standard **Extract → Transform → Load (ETL)** proce
 
 ---
 
+## 🚀 Pipeline Overview  
+
+Below is a visualization of the DAG as seen in the **Airflow UI pipeline graph**:
+
+![Airflow Pipeline Graph](docs/AirflowGraph.png)
+
 ## 🗄️ Database Tables  
 
 The pipeline creates a `time_series` table in PostgreSQL to store historical stock data.  
@@ -36,5 +42,19 @@ Example schema and sample rows:
 ---
 
 ## 📂 Project Structure  
-
-
+airflow/
+│── dags/ # Airflow DAGs
+│ └── etl_pipeline.py
+│── docs/ # Documentation and diagrams
+│ ├── etl_pipeline.png
+│ └── pipeline_tables.png
+│── modules/ # Custom ETL modules
+│ ├── extract.py
+│ ├── transform.py
+│ ├── load.py
+│ ├── fetch.py
+│ ├── utils.py
+│ └── init.py
+│── requirements.txt # Python dependencies
+│── README.md # Project documentation
+│── .gitignore # Git ignore rules
