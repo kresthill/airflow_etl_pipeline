@@ -7,7 +7,7 @@ __pycache__/
 
 # Virtual env
 venv/
-.env/
+.env
 
 # Airflow files
 airflow.db
@@ -16,6 +16,12 @@ logs/
 *.pid
 *.err
 *.out
+
+# Airflow
+airflow.db
+airflow.cfg
+airflow-webserver.pid
+airflow-scheduler.pid
 
 # IDE / OS junk
 .vscode/
