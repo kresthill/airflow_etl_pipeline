@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+
+# Virtual env
+venv/
+.env/
+
+# Airflow files
+airflow.db
+logs/
+*.log
+*.pid
+*.err
+*.out
+
+# IDE / OS junk
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Notebooks checkpoints
+.ipynb_checkpoints/
+
+airflow.cfg
+airflow.cfgn
